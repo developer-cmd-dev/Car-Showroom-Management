@@ -1,9 +1,11 @@
+import java.util.Scanner;
+
 public class Car extends Showroom implements utility{
     String carName;
     String model;
     int mileage;
     int cc;
-
+    Scanner sc = new Scanner(System.in);
 
     @Override
     public void get_details() {

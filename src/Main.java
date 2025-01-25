@@ -54,6 +54,17 @@ public class Main {
                         System.out.println("9]. Go back to main menu.");
                         choice = sc.nextInt();
                         break;
+
+                    case 3:
+                        cars[carCounter]=new Car();
+                        cars[carCounter].set_details();
+                        carCounter++;
+                        System.out.println();
+                        System.out.println("1]. Add New ShowRoom.");
+                        System.out.println("9]. Go back to main menu.");
+                        choice = sc.nextInt();
+                        break;
+
                     case 4:
                         for (int i = 0; i <showroomCounter ; i++) {
                             showroom[i].get_details();
