@@ -45,12 +45,38 @@ public class Main {
                         System.out.println("9]. Go back to main menu.");
                         choice = sc.nextInt();
                         break;
-
+                    case 2:
+                        employee[employeesCounter]=new Employee();
+                        employee[employeesCounter].set_details();
+                        employeesCounter++;
+                        System.out.println();
+                        System.out.println("1]. Add New ShowRoom.");
+                        System.out.println("9]. Go back to main menu.");
+                        choice = sc.nextInt();
+                        break;
                     case 4:
-                        System.out.println(showroomCounter);
                         for (int i = 0; i <showroomCounter ; i++) {
                             showroom[i].get_details();
                             System.out.println();
+                        }
+                        System.out.println();
+                        System.out.println("1]. Add New ShowRoom.");
+                        System.out.println("9]. Go back to main menu.");
+                        choice = sc.nextInt();
+                        break;
+                    case 5:
+                        for (int i = 0; i <employeesCounter ; i++) {
+                            employee[i].get_details();
+                        }
+                        System.out.println();
+                        System.out.println("1]. Add New ShowRoom.");
+                        System.out.println("9]. Go back to main menu.");
+                        choice = sc.nextInt();
+                        break;
+
+                    case 6:
+                        for (int i = 0; i <carCounter ; i++) {
+                            cars[i].get_details();
                         }
                         System.out.println();
                         System.out.println("1]. Add New ShowRoom.");
