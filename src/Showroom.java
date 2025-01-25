@@ -1,9 +1,16 @@
+import java.util.Scanner;
+
 public class Showroom implements utility {
     String showroomName;
     String showroomAddress;
     String managerName;
     String totalEmployee;
     int totalCars =0;
+    Scanner sc;
+
+    Showroom(){
+    sc = new Scanner(System.in);
+    }
 
     @Override
     public void get_details() {
@@ -16,6 +23,16 @@ public class Showroom implements utility {
 
     @Override
     public void set_details() {
+        System.out.println("Enter Showroom Name: ");
+        showroomName = sc.nextLine();
+        System.out.println("Enter Showroom Address: ");
+        showroomAddress = sc.nextLine();
+        System.out.println("Enter Manager Name: ");
+        managerName = sc.nextLine();
+        System.out.println("Enter Total Employees");
+        totalEmployee = sc.nextLine();
+        System.out.println("Enter Total Cars");
+        totalCars = sc.nextInt();
 
     }
 }
